@@ -1,0 +1,19 @@
+<section class="banner-area">
+    <div class="banner-img"></div>
+    <h1>Entrenamiento Consciente</h1>
+    <h3>Entrená con nosotros</h3>
+    <div class="flex">
+        <h2 *ngFor="let barrio of barrios">
+            {{barrio}}
+        </h2>
+    </div>
+    <a 
+        type="button" 
+        class="banner-btn"
+        (click)="obtenerHorarios()"
+    >Obtener horarios</a>
+    <br>
+    <h3>{{horarios}}</h3>
+   
+    <!-- <a href="#contacto" class="banner-btn">Contacto</a> -->
+</section>
